@@ -154,8 +154,8 @@ export default function Parrainage() {
             <a href="https://www.linkedin.com/in/virgile-bouali/" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition transform">
               <Image src="/linkedin.svg" alt="LinkedIn" width={30} height={24} />
             </a>
-            <a href="https://wa.me/33612345678" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition transform">
-              <Image src="/whatsapp.svg" alt="WhatsApp" width={30} height={24} />
+            <a href="https://wa.me/33624968953" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition transform">
+              <Image src="/icons8-whatsapp.svg" alt="WhatsApp" width={30} height={24} />
             </a>
             <a href="mailto:contact@virgilebouali.dev" className="hover:scale-110 transition transform">
               <Image src="/gmail.svg" alt="Gmail" width={30} height={24} />
