@@ -10,7 +10,6 @@ export default function Hero() {
   const container = useRef(null);
   const title = useRef(null);
   const heroBg = useRef(null);
-  const adjectiveRef = useRef<HTMLSpanElement>(null);
   const currentRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
@@ -124,7 +123,7 @@ export default function Hero() {
         Développeur web,<br />
         j&apos;aide les marques à créer<br />
         <span className="bg-gradient-to-r from-pink-500 via-orange-400 to-purple-500 bg-clip-text text-transparent font-[var(--font-inter)] font-light">
-          des sites <span ref={adjectiveRef} className="inline-block"></span>
+          des sites <span ref={currentRef} className="inline-block"></span>
         </span>
       </h1>
 
