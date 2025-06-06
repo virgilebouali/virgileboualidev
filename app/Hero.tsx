@@ -121,7 +121,7 @@ export default function Hero() {
 
       <h1 className="text-4xl md:text-6xl font-bold xl:leading-[10vh] max-w-4xl" ref={title}>
         Développeur web,<br />
-        j'aide les marques à créer<br />
+        j&apos;aide les marques à créer<br />
         <span className="bg-gradient-to-r from-pink-500 via-orange-400 to-purple-500 bg-clip-text text-transparent font-[var(--font-inter)] font-light">
           des sites <span ref={adjectiveRef} className="inline-block"></span>
         </span>
@@ -129,7 +129,7 @@ export default function Hero() {
 
       <p className="mt-6 text-base md:text-lg max-w-xl text-white/70 z-50">
   Développeur web actuellement en freelance,<br />
-  j’aime travailler sur des projets créatifs et innovants, en concevant des sites web qui répondent à vos besoins.
+  j&apos;aime travailler sur des projets créatifs et innovants, en concevant des sites web qui répondent à vos besoins.
 </p>
 
       <a
