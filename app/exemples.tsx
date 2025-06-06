@@ -104,7 +104,7 @@ export default function Exemples() {
             <h2 className="text-4xl md:text-5xl mb-16 text-center text-white font-light">
             Mes derniers  <span className=" font-light">projets   </span>  
          <div className="text-white/70 text-sm leading-relaxed mt-4">
-         Ils m'ont fait confiance pour créer leurs présence en ligne.
+         Ils m&apos;ont fait confiance pour créer leurs présence en ligne.
          </div>
             </h2>
             </div>

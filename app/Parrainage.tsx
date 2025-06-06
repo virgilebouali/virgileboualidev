@@ -137,7 +137,7 @@ export default function Parrainage() {
               backgroundClip: 'padding-box',
             }}
           >
-            Je souhaite parrainer quelqu'un
+            Je souhaite parrainer quelqu&apos;un
           </Link>
         </div>
         {/* Info bas */}

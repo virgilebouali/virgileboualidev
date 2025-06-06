@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -47,7 +47,6 @@ export default function Services() {
           scrub: 1,
           onUpdate: (self) => {
             const progress = self.progress;
-            const index = Math.floor(progress * services.length);
             // Animation de la barre de progression
             const progressBar = document.querySelector('.services-progress-bar');
             if (progressBar) {
