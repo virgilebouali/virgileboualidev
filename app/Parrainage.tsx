@@ -131,7 +131,7 @@ export default function Parrainage() {
             }}
           ></span>
           <Link
-            href="https://calendly.com/virgilebouali/30min"
+            href="mailto:virgile.bouali@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             className="relative inline-flex items-center justify-center px-10 py-4 bg-white text-[#1a1a1a] font-semibold rounded-full text-lg shadow-lg transition border-2 border-transparent z-10"
@@ -153,7 +153,7 @@ export default function Parrainage() {
             <a href="https://www.malt.fr/profile/virgilebouali" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition transform">
               <Image src="/malt.svg" alt="Malt" width={50} height={24} />
             </a>
-            <a href="https://www.linkedin.com/in/virgile-bouali/" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition transform">
+            <a href="https://www.linkedin.com/in/virgile-alexandre-bouali-038684123/" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition transform">
               <Image src="/linkedin.svg" alt="LinkedIn" width={30} height={24} />
             </a>
             <a href="https://wa.me/33624968953" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition transform">

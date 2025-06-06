@@ -126,7 +126,7 @@ On fait équipe ?
               <a href="https://www.malt.fr/profile/virgilebouali" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition transform social-icon">
                 <Image src="/malt.svg" alt="Malt" width={50} height={24} />
               </a>
-              <a href="https://www.linkedin.com/in/virgile-bouali/" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition transform social-icon">
+              <a href="https://www.linkedin.com/in/virgile-alexandre-bouali-038684123/" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition transform social-icon">
                 <Image src="/linkedin.svg" alt="LinkedIn" width={30} height={24} />
               </a>
               <a href="https://wa.me/33624968953" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition transform social-icon">

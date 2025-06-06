@@ -99,7 +99,7 @@ export default function Navbar() {
 
         {/* Menu */}
         <nav ref={navRef} className={`hidden md:flex gap-8 text-sm font-medium transition-colors duration-300 ${isDarkSection ? "text-black" : "text-white"}`}>
-          <a href="#exemples" className="hover:text-gray-400">Projets</a>
+          <a href="#projects" className="hover:text-gray-400">Projets</a>
           <a href="#contact" className="hover:text-gray-400">Contact</a>
           <a href="#services" className="hover:text-gray-400">Services</a>
         </nav>
