@@ -3,7 +3,6 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Image from 'next/image';
 import Link from 'next/link';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -17,12 +16,12 @@ const about = [
     {
       title: "Mon approche technique",
       content:
-        "Techniquement, je travaille avec React, Next.js, Tailwind, WordPress ou encore Shopify. Mais au-delà des outils, ce qui compte pour moi, c’est de comprendre vos besoins business et de construire des solutions qui font vraiment la différence."
+        "Techniquement, je travaille avec React, Next.js, Tailwind, WordPress ou encore Shopify. Mais au-delà des outils, ce qui compte pour moi, c'est de comprendre vos besoins business et de construire des solutions qui font vraiment la différence."
     },
     {
       title: "Pourquoi travailler ensemble ?",
       content:
-        "Je suis autonome, rigoureux, et j’ai le sens du détail. Mon objectif : vous livrer un site moderne, responsive, et surtout, orienté résultats. Bref, un site qui saura vous mettre en avant sur le web."
+        "Je suis autonome, rigoureux, et j'ai le sens du détail. Mon objectif : vous livrer un site moderne, responsive, et surtout, orienté résultats. Bref, un site qui saura vous mettre en avant sur le web."
     }
   ];
 

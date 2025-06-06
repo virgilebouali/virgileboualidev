@@ -32,7 +32,6 @@ export default function Services() {
   const servicesRef = useRef<HTMLDivElement[]>([]);
   const sectionRef = useRef<HTMLElement>(null);
   const checkmarkRef = useRef<HTMLDivElement>(null);
-  const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -49,7 +48,6 @@ export default function Services() {
           onUpdate: (self) => {
             const progress = self.progress;
             const index = Math.floor(progress * services.length);
-            setActiveIndex(Math.min(index, services.length - 1));
             // Animation de la barre de progression
             const progressBar = document.querySelector('.services-progress-bar');
             if (progressBar) {

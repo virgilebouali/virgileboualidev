@@ -113,7 +113,7 @@ export default function Testimonials() {
     <section ref={sectionRef} className="min-h-screen bg-white text-black py-20 relative overflow-hidden" id="testimonials">
       <div className="container mx-auto px-4 ">
         <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center bg-gradient-to-r from-pink-900 via-orange-400 to-purple-500 text-transparent bg-clip-text font-light">
-        <span className="text-black font-bold">   Ce qu'ils </span>  disent  de moi 🧡
+        <span className="text-black font-bold">   Ce qu&apos;ils </span>  disent  de moi 🧡
           <span ref={titleRef} className="block text-sm font-normal mt-4 text-black/60">
             Quelques retours de mes clients
           </span>
@@ -122,7 +122,7 @@ export default function Testimonials() {
         <div ref={cardsContainerRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-white shadow-lg p-6 rounded-2xl relative before:absolute before:inset-0 before:p-[1px] before:rounded-2xl before:bg-gradient-to-r before:from-pink-500 before:via-orange-400 before:to-purple-500 before:-z-10 after:absolute after:inset-[1px] after:rounded-2xl after:bg-white after:-z-10">
-              <p className="text-black/80 text-lg mb-4">"{testimonial.text}"</p>
+              <p className="text-black/80 text-lg mb-4">&quot;{testimonial.text}&quot;</p>
               <div className="flex items-center gap-4">
                 <img src={testimonial.avatar} alt={testimonial.name} className="w-12 h-12 rounded-full object-cover" />
                 <div>

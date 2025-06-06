@@ -1,11 +1,9 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import Image from "next/image";
-import gsap from "gsap";
 import DownloadCV from "./DownloadCV";
+import gsap from "gsap";
 export default function Navbar() {
-  const [open, setOpen] = useState(false);
   const [isDarkSection, setIsDarkSection] = useState(false);
   const logoRef = useRef(null);
   const navRef = useRef(null);

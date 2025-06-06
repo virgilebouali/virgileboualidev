@@ -42,7 +42,7 @@ export default function TechStackSection() {
   const gradientRef = useRef<HTMLSpanElement>(null);
 
   // Génère 50 lignes avec des tailles et positions aléatoires
-  const lines = Array.from({ length: 50 }).map((_, i) => ({
+  const lines = Array.from({ length: 50 }).map(() => ({
     left: getRandom(0, 90), // en %
     width: getRandom(10, 80), // px
     opacity: getRandom(0.3, 0.5),

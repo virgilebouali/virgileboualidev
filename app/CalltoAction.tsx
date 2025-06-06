@@ -12,7 +12,6 @@ export default function CallToAction() {
   const sectionRef = useRef<HTMLElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
   const circleRef = useRef<HTMLDivElement>(null);
-  const iconsRef = useRef<(HTMLAnchorElement | null)[]>([]);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -113,7 +112,7 @@ export default function CallToAction() {
             </span>
           </h2>
           <p className="text-[#05040b]/70 text-lg mb-8">
-          Un site web clair, beau et efficace : je m’occupe du design, du développement et de l’accompagnement pour vous aider à atteindre vos objectifs.          </p>
+          Un site web clair, beau et efficace : je m'occupe du design, du développement et de l'accompagnement pour vous aider à atteindre vos objectifs.          </p>
           <div className="flex flex-col gap-6">
             <Link
               href="#contact"
