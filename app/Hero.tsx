@@ -11,6 +11,7 @@ export default function Hero() {
   const title = useRef(null);
   const heroBg = useRef(null);
   const adjectiveRef = useRef(null);
+  const currentRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -69,7 +70,7 @@ export default function Hero() {
 
     const animate = () => {
       const word = adjectives[wordIndex];
-      const current = adjectiveRef.current;
+      const current = currentRef.current;
       if (current) {
         if (!isDeleting) {
           // Ajoute une lettre
