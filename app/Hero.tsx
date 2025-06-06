@@ -65,7 +65,7 @@ export default function Hero() {
     let wordIndex = 0;
     let letterIndex = 0;
     let isDeleting = false;
-    let timeout;
+    let timeout: ReturnType<typeof setTimeout>;
 
     const animate = () => {
       const word = adjectives[wordIndex];
