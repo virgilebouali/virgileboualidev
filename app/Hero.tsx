@@ -10,7 +10,7 @@ export default function Hero() {
   const container = useRef(null);
   const title = useRef(null);
   const heroBg = useRef(null);
-  const adjectiveRef = useRef(null);
+  const adjectiveRef = useRef<HTMLSpanElement>(null);
   const currentRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
