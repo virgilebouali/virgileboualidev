@@ -86,7 +86,7 @@ export default function Projects() {
 
     // Animation de la rocket avec scrub pour un mouvement fluide dans les deux sens
     gsap.to(rocket, {
-      x: isMobile ? 0 : 6000,
+      x: isMobile ? 3000 : 6000,
       y: isMobile ? -2000 : -700,
       scale: isMobile ? 10 : 20,
       zIndex: 1000,
