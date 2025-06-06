@@ -105,12 +105,18 @@ export default function Navbar() {
         </nav>
 
         {/* CTA */}
-        <div ref={ctaRef} className={`hidden cursor-pointer md:flex items-center gap-2 border border-white/20 text-sm px-4 py-2 rounded-full transition ${isDarkSection ? "bg-white text-black hover:bg-black/90 hover:text-white" : "bg-slate-900 text-white hover:text-black hover:bg-white/90"}`}>
+        <a 
+          href="https://calendly.com/virgile-bouali/discutons" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          ref={ctaRef} 
+          className={`hidden cursor-pointer md:flex items-center gap-2 border border-white/20 text-sm px-4 py-2 rounded-full transition ${isDarkSection ? "bg-white text-black hover:bg-black/90 hover:text-white" : "bg-slate-900 text-white hover:text-black hover:bg-white/90"}`}
+        >
           <div className="flex -space-x-1">
             <img ref={fake1Ref} src="/icons8-speech-bubble (1).svg" alt="" width={24} height={24} className="rounded-full text-white" />
           </div>
           <span ref={textRef} className="font-medium">Demander un devis</span>
-        </div>
+        </a>
         <DownloadCV />
       </div>
     </header>

@@ -133,7 +133,9 @@ export default function Hero() {
 </p>
 
       <a
-        href="#services"
+        href="https://calendly.com/virgilebouali/30min"
+        target="_blank"
+        rel="noopener noreferrer"
         className="mt-10 inline-block rounded-full px-6 py-3 bg-white text-black font-medium transition-all duration-300 backdrop-blur relative before:absolute before:inset-0 before:p-[1px] before:rounded-full before:bg-gradient-to-r before:from-pink-500 before:via-orange-400 before:to-purple-500 before:-z-10 before:transition-all before:duration-300 hover:before:p-[3px] hover:before:blur-[2px] after:absolute after:inset-[1px] after:rounded-full after:bg-white after:-z-10 after:transition-all after:duration-300 hover:after:inset-[3px]"
       >
         Travaillons ensemble

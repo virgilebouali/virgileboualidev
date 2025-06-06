@@ -131,7 +131,9 @@ export default function Parrainage() {
             }}
           ></span>
           <Link
-            href="#contact"
+            href="https://calendly.com/virgilebouali/30min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="relative inline-flex items-center justify-center px-10 py-4 bg-white text-[#1a1a1a] font-semibold rounded-full text-lg shadow-lg transition border-2 border-transparent z-10"
             style={{
               backgroundClip: 'padding-box',
@@ -157,7 +159,7 @@ export default function Parrainage() {
             <a href="https://wa.me/33624968953" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition transform">
               <Image src="/icons8-whatsapp.svg" alt="WhatsApp" width={30} height={24} />
             </a>
-            <a href="mailto:contact@virgilebouali.dev" className="hover:scale-110 transition transform">
+            <a href="mailto:virgile.bouali@gmail.com" className="hover:scale-110 transition transform">
               <Image src="/gmail.svg" alt="Gmail" width={30} height={24} />
             </a>
           </div>
