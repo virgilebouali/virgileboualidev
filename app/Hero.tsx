@@ -70,30 +70,30 @@ export default function Hero() {
     const animate = () => {
       const word = adjectives[wordIndex];
       const current = adjectiveRef.current;
-      if (!current) return;
-
-      if (!isDeleting) {
-        // Ajoute une lettre
-        current.textContent = word.slice(0, letterIndex + 1);
-        if (letterIndex < word.length - 1) {
-          letterIndex++;
-          timeout = setTimeout(animate, 60);
+      if (current) {
+        if (!isDeleting) {
+          // Ajoute une lettre
+          current.textContent = word.slice(0, letterIndex + 1);
+          if (letterIndex < word.length - 1) {
+            letterIndex++;
+            timeout = setTimeout(animate, 60);
+          } else {
+            // Pause avant de supprimer
+            isDeleting = true;
+            timeout = setTimeout(animate, 1200);
+          }
         } else {
-          // Pause avant de supprimer
-          isDeleting = true;
-          timeout = setTimeout(animate, 1200);
-        }
-      } else {
-        // Supprime une lettre
-        current.textContent = word.slice(0, letterIndex);
-        if (letterIndex > 0) {
-          letterIndex--;
-          timeout = setTimeout(animate, 40);
-        } else {
-          // Passe au mot suivant
-          isDeleting = false;
-          wordIndex = (wordIndex + 1) % adjectives.length;
-          timeout = setTimeout(animate, 300);
+          // Supprime une lettre
+          current.textContent = word.slice(0, letterIndex);
+          if (letterIndex > 0) {
+            letterIndex--;
+            timeout = setTimeout(animate, 40);
+          } else {
+            // Passe au mot suivant
+            isDeleting = false;
+            wordIndex = (wordIndex + 1) % adjectives.length;
+            timeout = setTimeout(animate, 300);
+          }
         }
       }
     };
