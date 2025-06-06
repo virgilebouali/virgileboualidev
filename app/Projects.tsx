@@ -20,7 +20,7 @@ const cards = [
     },
     {
       title: "Iminios",
-      description: "Boutique Shopify customisée pour une marque de vêtements. Intégration produits, design, optimisation mobile et tunnel de vente.",
+      description: "Boutique Shopify customisée pour une marque de vêtements. Schéma & settings en liquid, intégration produits, design, optimisation mobile et tunnel de vente.",
       image: "/iminios.png",
       link: "https://iminios.com",
       logos: [
@@ -86,16 +86,16 @@ export default function Projects() {
 
     // Animation de la rocket avec scrub pour un mouvement fluide dans les deux sens
     gsap.to(rocket, {
-      x: 6000,
-      y: -700,
-      scale: 20,
+      x: isMobile ? 0 : 6000,
+      y: isMobile ? -2000 : -700,
+      scale: isMobile ? 10 : 20,
       zIndex: 1000,
-      rotate: 40,
+      rotate: isMobile ? 0 : 40,
       ease: "none",
       scrollTrigger: {
         trigger: section,
         start: 'top top',
-        end: () => `+=${cardsContainer.scrollWidth / 1.7}`,
+        end: () => `+=${cardsContainer.scrollWidth / scrollMultiplier}`,
         scrub: 1,
       }
     });
