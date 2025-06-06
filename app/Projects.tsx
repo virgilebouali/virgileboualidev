@@ -167,7 +167,7 @@ export default function Projects() {
             </div>
             {/* Bordure basse animée */}
             <span
-              ref={el => borderRefs.current[i] = el}
+              ref={(el) => { borderRefs.current[i] = el }}
               className="absolute left-0 bottom-0 w-full h-[3px]"
               style={{
                 background: 'linear-gradient(90deg, #ec4899, #fb923c, #a21caf, #ec4899)',
