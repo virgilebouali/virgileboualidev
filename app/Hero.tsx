@@ -106,7 +106,7 @@ export default function Hero() {
   return (
     <section
       ref={container}
-      className="min-h-screen z-50 flex flex-col justify-center items-center text-center px-4 text-white bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#0f1117] via-[#12182a] to-[#2663f5] overflow-hidden"
+      className="min-h-screen relative z-50 flex flex-col justify-center items-center text-center px-4 text-white bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#0f1117] via-[#12182a] to-[#2663f5] overflow-hidden"
     >
         <Navbar />
         
@@ -116,11 +116,15 @@ export default function Hero() {
           alt="herobg" 
           className="absolute top-0 left-0 w-full h-full object-cover" 
         />
+         <span
+                className="absolute inset-0 w-[70%] h-[70%] left-1/2 -translate-x-1/2 top-[50%] -translate-y-1/2 xl:hidden block rounded-xl blur-2xl opacity-20 z-0 bg-gradient-to-br from-pink-500 via-orange-400 to-purple-500"
+                aria-hidden="true"
+              ></span>
       <span className="mb-6 inline-block px-4 py-1 rounded-full text-sm text-white/80 backdrop-blur-sm relative before:absolute before:inset-0 before:p-[1px] before:rounded-full before:bg-gradient-to-r before:from-pink-500 before:via-orange-400 before:to-purple-500 before:-z-10 after:absolute after:inset-[1px] after:rounded-full after:bg-[#110d21] after:-z-10">
         Besoin de créer un site web ?
       </span>
 
-      <h1 className="text-4xl md:text-6xl font-bold xl:leading-[10vh] max-w-4xl" ref={title}>
+      <h1 className="text-4xl md:text-6xl font-bold xl:leading-[10vh] max-w-4xl z-50" ref={title}>
         Développeur web,<br />
         j&apos;aide les marques à créer<br />
         <span className="bg-gradient-to-r from-pink-500 via-orange-400 to-purple-500 bg-clip-text text-transparent font-[var(--font-inter)] font-light">
