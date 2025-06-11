@@ -56,8 +56,8 @@ const ScrollDown = () => {
   if (!isVisible) return null;
 
   return (
-    <div className={`fixed bottom-2 left-1/2 -translate-x-1/2 z-50 flex items-center gap-2 animate-bounce border-2 ${isDarkSection ? 'border-black' : 'border-white'} rounded-full px-2`}>
-      <span className={`text-sm font-medium ${isDarkSection ? 'text-black' : 'text-white'}`}>Scroll down</span>
+    <div className={`fixed bottom-5 left-1/2 -translate-x-1/2 z-50 flex items-center gap-2 animate-bounce border-2 ${isDarkSection ? 'border-black' : 'border-white'} rounded-full px-2`}>
+      <span className={`text-sm font-medium ${isDarkSection ? 'text-black' : 'text-white'}`}></span>
       <svg 
         className={`w-4 h-4 ${isDarkSection ? 'text-black' : 'text-white'}`}
         fill="none" 
