@@ -52,8 +52,8 @@ export default function Testimonials() {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: section,
-          start: "top top",
-          end: "+=300%",
+          start: isMobile ? "top 10%" : "top top",
+          end: isMobile ? "+=100%" : "+=300%",
           pin: !isMobile,
           scrub: 1,
           onUpdate: (self) => {
@@ -112,7 +112,7 @@ export default function Testimonials() {
 
   return (
     <section ref={sectionRef} className="min-h-screen bg-white text-black py-20 relative overflow-hidden" id="testimonials">
-      <div className="container mx-auto px-4 ">
+      <div className="container relative mx-auto px-4 ">
         <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center bg-gradient-to-r from-pink-900 via-orange-400 to-purple-500 text-transparent bg-clip-text font-light">
         <span className="text-black font-bold">   Ce qu&apos;ils </span>  disent  de moi 🧡
           <span ref={titleRef} className="block text-sm font-normal mt-4 text-black/60">
@@ -135,7 +135,7 @@ export default function Testimonials() {
           ))}
         </div>
 
-        <div className="fixed xl:bottom-[10vh] top-[25vh] left-1/2 -translate-x-1/2 w-[90%] max-w-2xl h-1 bg-black/10 rounded-full overflow-hidden">
+        <div className="xl:fixed hidden xl:block xl:bottom-[10vh] top-[25vh] left-1/2 -translate-x-1/2 w-[90%] max-w-2xl h-1 bg-black/10 rounded-full overflow-hidden">
           <div ref={progressRef} className="h-full bg-gradient-to-r from-white via-orange-400 to-purple-500 rounded-full" style={{ width: '0%' }}></div>
         </div>
       </div>

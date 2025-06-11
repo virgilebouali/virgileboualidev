@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     siteName: "Virgile Bouali",
     images: [
       {
-        url: "/favicon.png",
+        url: "./favicon.png",
         width: 512,
         height: 512,
         alt: "Logo Virgile Bouali",

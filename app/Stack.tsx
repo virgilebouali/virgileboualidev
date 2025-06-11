@@ -68,7 +68,7 @@ export default function TechStackSection() {
         scrollTrigger: {
           trigger: section,
           start: 'top top',
-          end: '+=200%',
+          end: '+=100%',
           pin: !isMobile,
           scrub: 1,
         }
@@ -137,7 +137,7 @@ export default function TechStackSection() {
   }, [lines]);
 
   return (
-    <section className="bg-[#05040b] text-white py-24 px-4 relative overflow-hidden min-h-screen" id="stack">
+    <section className="bg-[#05040b] text-white py-24 px-4 relative overflow-x-hidden min-h-screen" id="stack">
       {/* Lignes pluie animées en background */}
       <div className="absolute inset-0 w-full h-full z-10 pointer-events-none">
         {lines.map((line, i) => (
@@ -159,7 +159,7 @@ export default function TechStackSection() {
       </div>
       <span
         ref={gradientBarRef}
-        className="absolute top-0 left-0 w-full h-[2px]"
+        className="absolute top-0 left-0 w-full h-[2px] xl:block hidden"
         style={{
           background: 'linear-gradient(90deg, #ec4899, #fb923c, #a21caf, #ec4899)',
           backgroundSize: '200% 100%',
