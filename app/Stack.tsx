@@ -55,6 +55,7 @@ export default function TechStackSection() {
       const section = containerRef.current;
       if (!section) return;
 
+      const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
       const logos = section.querySelectorAll('.tech-logo');
       gsap.set(logos, { opacity: 0, y: 60 });
 
@@ -68,7 +69,7 @@ export default function TechStackSection() {
           trigger: section,
           start: 'top top',
           end: '+=200%',
-          pin: true,
+          pin: !isMobile,
           scrub: 1,
         }
       });

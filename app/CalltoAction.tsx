@@ -30,11 +30,6 @@ export default function CallToAction() {
         }
       });
     
-     
-      tl.fromTo(content,
-        { opacity: 0, y: 100 },
-        { opacity: 1, y: 0, duration: 4 }
-      );
 
       // Animation des icônes dans la timeline principale
       const icons = document.querySelectorAll('.social-icon');
@@ -115,7 +110,7 @@ export default function CallToAction() {
           Un site web clair, beau et efficace : je m&apos;occupe du design, du développement et de l&apos;accompagnement pour vous aider à atteindre vos objectifs.          </p>
           <div className="flex flex-col gap-6">
             <Link
-              href="https://calendly.com/virgilebouali/30min"
+              href="https://calendly.com/virgile-bouali/discutons"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block xl:px-8 px-6 py-2 bg-white text-[#05040b] hover:text-gray-700 font-semibold rounded-full scale-105 transition transform xl:w-fit w-[50%] relative before:absolute before:inset-0 before:p-[1px] before:rounded-full before:bg-gradient-to-br before:from-pink-500 before:via-orange-400 before:to-purple-500 before:-z-10 after:absolute after:inset-[1px] after:rounded-full after:bg-white after:-z-10"

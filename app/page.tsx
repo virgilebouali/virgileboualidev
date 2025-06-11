@@ -6,6 +6,7 @@ import Testimonials from "./testity";
 import Parrainage from "./Parrainage";
 import Projects from "./Projects";
 import Stack from "./Stack";
+import ScrollDown from "./components/ScrollDown";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <CalltoAction />
       <Testimonials />
       <Parrainage />
+      <ScrollDown />
     </main>
   );
 }

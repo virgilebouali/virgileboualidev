@@ -12,19 +12,19 @@ const testimonials = [
     name: "Sarah M.",
     role: "Fondatrice de Iminios",
     text: "Virgile a su transformer notre vision en un site Shopify moderne et fluide. Tout était clair, rapide, et livré dans les délais. On a vu une hausse directe de nos conversions.",
-    avatar: "/testify.jpeg"
+    avatar: "/heloise.png"
   },
   {
     name: "Julien L.",
     role: "Directeur MV Suisse Conseil",
     text: "Une super collaboration ! Virgile a compris nos enjeux métier et a développé un site clair, rapide et bien référencé. Très pro et autonome.",
-    avatar: "/testify.jpeg"
+    avatar: "/mvsuissee.png"
   },
     {
       name: "Émilie R.",
       role: "Cheffe de projet chez Greenlight Films",
       text: "Virgile a intégré nos maquettes complexes avec précision. Le rendu final était exactement comme attendu, avec des animations fluides et un code propre.",
-      avatar: "/testify.jpeg"
+      avatar: "/emili.png"
     }
     , 
     
@@ -47,12 +47,14 @@ export default function Testimonials() {
 
       if (!section || !cardsContainer || !title || !progress) return;
 
+      const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
+
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: section,
           start: "top top",
           end: "+=300%",
-          pin: true,
+          pin: !isMobile,
           scrub: 1,
           onUpdate: (self) => {
             gsap.to(progress, {
@@ -72,7 +74,6 @@ export default function Testimonials() {
 
       // Animation de remplacement des cartes
       const cards = cardsContainer.children;
-      const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
       for (let i = 0; i < cards.length; i++) {
         const card = cards[i];
         const nextCard = cards[i + 1];
