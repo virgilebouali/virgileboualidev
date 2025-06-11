@@ -29,11 +29,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Virgile Bouali - Développeur Web",
     description: "Création de sites web modernes, performants et sur-mesure.",
-    url: "https://tonsite.com",
+    url: "https://virgilebouali.dev",
     siteName: "Virgile Bouali",
     images: [
       {
-        url: "/logo.png",
+        url: "/favicon.png",
         width: 512,
         height: 512,
         alt: "Logo Virgile Bouali",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Virgile Bouali - Développeur Web",
-    description: "Création de sites web modernes, performants et sur-mesure à Paris.",
+    description: "Création de sites web modernes, performants et sur-mesure",
     images: ["/logo.png"],
   },
   icons: {
