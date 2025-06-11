@@ -137,7 +137,7 @@ export default function TechStackSection() {
   }, [lines]);
 
   return (
-    <section className="bg-[#05040b] text-white py-24 px-4 relative overflow-x-hidden min-h-screen" id="stack">
+    <section className="bg-[#05040b] text-white py-24 px-4 relative overflow-hidden min-h-screen" id="stack">
       {/* Lignes pluie animées en background */}
       <div className="absolute inset-0 w-full h-full z-10 pointer-events-none">
         {lines.map((line, i) => (
