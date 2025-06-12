@@ -31,9 +31,6 @@ const tools = [
   { name: 'Notion', src: '/notion-2.svg' },
 ];
 
-function getRandom(min: number, max: number) {
-  return Math.random() * (max - min) + min;
-}
 
 export default function TechStackSection() {
   const containerRef = useRef<HTMLDivElement>(null);
