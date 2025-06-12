@@ -27,16 +27,16 @@ const cards = [
         { src: "/icons8-shopify.svg", alt: "Shopify" }
       ]
     },
-    // {
-    //   title: "SHOWREEL (A VENIR)",
-    //   description: "Intégration de 10 maquettes Readymag en HTML à l'aide de Tailwind CSS, GSAP pour les animations et Nunjucks pour le templating, au sein d'un CMS interne. Travail pixel perfect conformément aux designs fournis.",
-    //   image: "/readymag.png",
-    //   link: "#",
-    //   logos: [
-    //     { src: "/icons8-javascript.svg", alt: "JavaScript" },
-    //     { src: "/icons8-github.svg", alt: "Git" }
-    //   ]
-    // },
+    {
+      title: "SHOWREEL (A VENIR)",
+      description: "Intégration de 10 maquettes Readymag en HTML à l'aide de Tailwind CSS, GSAP pour les animations et Nunjucks pour le templating, au sein d'un CMS interne. Travail pixel perfect conformément aux designs fournis.",
+      image: "/readymag.png",
+      link: "#",
+      logos: [
+        { src: "/icons8-javascript.svg", alt: "JavaScript" },
+        { src: "/icons8-github.svg", alt: "Git" }
+      ]
+    },
     {
       title: "MV Suisse Conseil",
       description: "Site WordPress pour un cabinet d'assurance suisse. Design professionnel, formulaire de contact automatisé avec Zapier vers un CRM interne.",
