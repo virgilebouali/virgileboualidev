@@ -47,6 +47,18 @@ const cards = [
         { src: "/icons8-javascript.svg", alt: "JavaScript" }
       ]
     },
+    {
+      title: "Observatoire du réel",
+      description: "Site WordPress pour une association suisse organisant des conférences et diffusant des contenus engagés. Intégration d'une billetterie en ligne et d'une boutique WooCommerce (livres, DVD, etc.), avec une interface moderne et un tunnel d’achat fluide.",
+      image: "/odr.png",
+      link: "https://observatoire-reel.com/",
+      logos: [
+        { src: "/icons8-wordpress-500.png", alt: "WordPress" },
+        { src: "/icons8-javascript.svg", alt: "JavaScript" },
+        { src: "/woocommerce.svg", alt: "WooCommerce" }
+      ]
+    }
+    
   ];
   
 

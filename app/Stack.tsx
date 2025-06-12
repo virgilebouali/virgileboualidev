@@ -169,7 +169,7 @@ export default function TechStackSection() {
       />
       
       <span
-        className="absolute -z-10 left-0 top-0 w-full h-full pointer-events-none"
+        className="absolute -z-10 left-0 top-0 w-full h-full pointer-events-none xl:block hidden"
         style={{
           background: "linear-gradient(to bottom, rgba(5,4,11,0) 0%, rgba(5,4,11,0.8) 100%)"
         }}
