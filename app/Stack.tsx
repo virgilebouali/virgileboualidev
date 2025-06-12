@@ -159,7 +159,7 @@ export default function TechStackSection() {
       </div>
       <span
         ref={gradientBarRef}
-        className="absolute top-0 left-0 w-full h-[2px] xl:block hidden"
+        className="absolute top-0 left-0 w-full h-[2px]"
         style={{
           background: 'linear-gradient(90deg, #ec4899, #fb923c, #a21caf, #ec4899)',
           backgroundSize: '200% 100%',
@@ -169,14 +169,22 @@ export default function TechStackSection() {
       />
       
       <span
-        className="absolute -z-10 left-0 top-0 w-full h-full pointer-events-none xl:block hidden"
+        className="absolute -z-10 left-0 top-0 w-full h-full pointer-events-none"
         style={{
           background: "linear-gradient(to bottom, rgba(5,4,11,0) 0%, rgba(5,4,11,0.8) 100%)"
         }}
       />
       
       <div className="max-w-6xl mx-auto text-center" ref={containerRef}>
-      <span ref={gradientRef} className="absolute -z-10 left-1/2 -translate-x-1/2 top-[-5%] -translate-y-1/2 w-[1700px] h-[750px] bg-gradient-to-br from-pink-500 via-orange-400 to-purple-500 blur-2xl opacity-40 rotate-0 slow-pulse"></span>
+      <span
+        ref={gradientRef}
+        className="
+          absolute -z-10 left-1/2 -translate-x-1/2 top-[-5%] -translate-y-1/2
+          w-[95vw] max-w-[1700px] h-[60vw] max-h-[750px]
+          bg-gradient-to-br from-pink-500 via-orange-400 to-purple-500
+          blur-2xl opacity-40 rotate-0 slow-pulse
+        "
+      ></span>
 
         <span 
           className=" mb-6 inline-block px-4 py-1 mt-[10vh] rounded-full text-sm text-white/80 backdrop-blur-sm relative before:absolute before:inset-0 before:p-[1px] before:rounded-full before:bg-gradient-to-r before:from-pink-500 before:via-orange-400 before:to-purple-500 before:-z-10 after:absolute after:inset-[1px] after:rounded-full after:bg-[#110d21] after:-z-10"

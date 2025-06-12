@@ -157,7 +157,7 @@ export default function Projects() {
         {cards.map((card, i) => (
           <div
             key={i}
-            className="min-w-[100vw] xl:h-[80vh] h-[85vh] xl:min-w-[50vw] bg-white/5 rounded-2xl backdrop-blur-sm overflow-hidden relative hover:scale-105 transition-transform duration-300 cursor-pointer"
+            className="min-w-[100vw] xl:h-[80vh] lg:h-[75 vh] h-[85vh] xl:min-w-[50vw] bg-white/5 rounded-2xl backdrop-blur-sm overflow-hidden relative hover:scale-105 transition-transform duration-300 cursor-pointer"
             onClick={() => window.open(card.link, '_blank')}
           >
             <div className="h-[60vh] w-full overflow-hidden">

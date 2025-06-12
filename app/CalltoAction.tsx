@@ -83,7 +83,7 @@ export default function CallToAction() {
 
       <div 
         ref={contentRef}
-        className="container mx-auto h-screen flex flex-col md:flex-row items-center justify-center xl:px-24 px-10"
+        className="container mx-auto h-screen flex flex-col md:flex-row items-center justify-center xl:px-24 px-10 lg:px-0"
       >
         {/* Image gauche */}
         <div className="w-full md:w-1/2 mx-auto relative">

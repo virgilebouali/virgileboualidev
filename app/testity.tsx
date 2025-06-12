@@ -120,7 +120,7 @@ export default function Testimonials() {
           </span>
         </h2>
         <img src="/testimonials.png" alt="testify" className="w-[45%] h-full xl:block hidden rounded-full object-cover absolute bottom-[-5%] right-[0%] -z-10" />
-        <div ref={cardsContainerRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:gap-8 gap-0">
+        <div ref={cardsContainerRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-3 xl:gap-8 gap-0">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-white shadow-lg p-6 rounded-2xl relative before:absolute before:inset-0 before:p-[1px] before:rounded-2xl before:bg-gradient-to-r before:from-pink-500 before:via-orange-400 before:to-purple-500 before:-z-10 after:absolute after:inset-[1px] after:rounded-2xl after:bg-white after:-z-10">
               <p className="text-black/80 text-lg mb-4">&quot;{testimonial.text}&quot;</p>
