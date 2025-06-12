@@ -42,12 +42,12 @@ export default function TechStackSection() {
   const gradientRef = useRef<HTMLSpanElement>(null);
 
   // Génère 50 lignes avec des tailles et positions aléatoires
-  const lines = Array.from({ length: 50 }).map(() => ({
-    left: getRandom(0, 90), // en %
-    width: getRandom(10, 80), // px
-    opacity: getRandom(0.3, 0.5),
-    duration: getRandom(2.5, 5),
-    delay: getRandom(0, 3),
+  const lines = Array.from({ length: 50 }).map((_, index) => ({
+    left: (index * 1.8) % 90, // Distribution uniforme entre 0 et 90
+    width: 30 + (index * 0.8), // Largeur croissante
+    opacity: 0.3 + (index * 0.004), // Opacité croissante
+    duration: 2.5 + (index * 0.05), // Durée croissante
+    delay: index * 0.06, // Délai croissant
   }));
 
   useEffect(() => {
