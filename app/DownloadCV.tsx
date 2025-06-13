@@ -46,7 +46,7 @@ export default function DownloadCV() {
         ✅
       </div>
       <a
-        href="/CV-2025-Virgile-Bouali.pdf"
+        href="/CV 2025 - FullStack Dev.pdf"
         download
         onClick={handleClick}
         className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-[#967095] to-[#908fed] text-white font-semibold shadow-lg hover:scale-105 transition"
