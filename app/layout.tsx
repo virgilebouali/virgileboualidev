@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Virgile Bouali - Développeur Web",
     description: "Création de sites web modernes, performants et sur-mesure",
-    images: ["/logo.png"],
+    images: ["/preview.jpg"],
   },
   icons: {
     icon: "/logo.png",
