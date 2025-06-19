@@ -19,7 +19,7 @@ const cards = [
       ]
     },
     {
-      title: "Iminios",
+      title: "Iminios (CLOSED)",
       description: "Boutique Shopify customisée pour une marque de vêtements. Schéma & settings en liquid, intégration produits, design, optimisation mobile et tunnel de vente.",
       image: "/iminios.png",
       link: "https://iminios.com",
