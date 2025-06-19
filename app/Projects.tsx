@@ -55,7 +55,6 @@ const cards = [
       logos: [
         { src: "/icons8-wordpress-500.png", alt: "WordPress" },
         { src: "/icons8-javascript.svg", alt: "JavaScript" },
-        { src: "/woocommerce.svg", alt: "WooCommerce" }
       ]
     }
     
